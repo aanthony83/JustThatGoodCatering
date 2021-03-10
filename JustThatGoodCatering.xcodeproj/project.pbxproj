@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43DBFC7E1B1044A3DBCA4997 /* Pods_JustThatGoodCatering.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65BF7715FFC4273682BFCC71 /* Pods_JustThatGoodCatering.framework */; };
+		B60CED9C25AE395700CDC5DC /* JustThatGoodCateringApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60CED9B25AE395700CDC5DC /* JustThatGoodCateringApp.swift */; };
+		B60CEDA025AE395900CDC5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60CED9F25AE395900CDC5DC /* Assets.xcassets */; };
+		B60CEDA325AE395900CDC5DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60CEDA225AE395900CDC5DC /* Preview Assets.xcassets */; };
+		B61299AC25D70666007FE109 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61299AB25D70666007FE109 /* DetailView.swift */; };
+		B61582EA25EB1CC7005BA581 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61582E925EB1CC7005BA581 /* MainView.swift */; };
+		B61582ED25EB2301005BA581 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61582EC25EB2301005BA581 /* AboutView.swift */; };
+		B617B29925AF652100314366 /* HomeTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617B29825AF652100314366 /* HomeTiles.swift */; };
+		B617B29C25AF6D9B00314366 /* HomeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617B29B25AF6D9B00314366 /* HomeTileView.swift */; };
+		B6180E4725B1F5FE0029C947 /* HomeTileStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6180E4625B1F5FE0029C947 /* HomeTileStack.swift */; };
+		B62048E125B09C0500171789 /* CaterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62048E025B09C0500171789 /* CaterList.swift */; };
+		B62048E425B09D0D00171789 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62048E325B09D0D00171789 /* ImageLoader.swift */; };
+		B62048FA25B0BC8C00171789 /* CaterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62048F925B0BC8C00171789 /* CaterItem.swift */; };
+		B62048FD25B0BC9E00171789 /* CaterItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62048FC25B0BC9E00171789 /* CaterItemRow.swift */; };
+		B6275A9525F48C1800B69A67 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6275A9425F48C1800B69A67 /* GoogleService-Info.plist */; };
+		B63B62B925AE470000B96B5F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B62B825AE470000B96B5F /* HomeView.swift */; };
+		B63B62BE25AE475200B96B5F /* GlobalHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B62BD25AE475200B96B5F /* GlobalHelper.swift */; };
+		B63B62C125AE48F100B96B5F /* Cater.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B62C025AE48F100B96B5F /* Cater.swift */; };
+		B63B62C425AE4ACD00B96B5F /* CaterVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63B62C325AE4ACD00B96B5F /* CaterVM.swift */; };
+		B645512B25F441BB00CF25ED /* CaterImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B645512A25F441BB00CF25ED /* CaterImageHelper.swift */; };
+		B65B692425CDE46E002725F4 /* ServicesModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B692325CDE46E002725F4 /* ServicesModal.swift */; };
+		B65B692725CDE95A002725F4 /* CaterServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B692625CDE95A002725F4 /* CaterServicesView.swift */; };
+		B65B692A25CDEBD5002725F4 /* CaterServiceStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B692925CDEBD5002725F4 /* CaterServiceStack.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65BF7715FFC4273682BFCC71 /* Pods_JustThatGoodCatering.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustThatGoodCatering.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60CED9825AE395700CDC5DC /* JustThatGoodCatering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustThatGoodCatering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60CED9B25AE395700CDC5DC /* JustThatGoodCateringApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustThatGoodCateringApp.swift; sourceTree = "<group>"; };
+		B60CED9F25AE395900CDC5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B60CEDA225AE395900CDC5DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B60CEDA425AE395900CDC5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B61299AB25D70666007FE109 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B61582E925EB1CC7005BA581 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B61582EC25EB2301005BA581 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B617B29825AF652100314366 /* HomeTiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTiles.swift; sourceTree = "<group>"; };
+		B617B29B25AF6D9B00314366 /* HomeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileView.swift; sourceTree = "<group>"; };
+		B6180E4625B1F5FE0029C947 /* HomeTileStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileStack.swift; sourceTree = "<group>"; };
+		B62048E025B09C0500171789 /* CaterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterList.swift; sourceTree = "<group>"; };
+		B62048E325B09D0D00171789 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B62048F925B0BC8C00171789 /* CaterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterItem.swift; sourceTree = "<group>"; };
+		B62048FC25B0BC9E00171789 /* CaterItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterItemRow.swift; sourceTree = "<group>"; };
+		B6275A9425F48C1800B69A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Dev Files/JTG Assets/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B63B62B825AE470000B96B5F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B63B62BD25AE475200B96B5F /* GlobalHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelper.swift; sourceTree = "<group>"; };
+		B63B62C025AE48F100B96B5F /* Cater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cater.swift; sourceTree = "<group>"; };
+		B63B62C325AE4ACD00B96B5F /* CaterVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterVM.swift; sourceTree = "<group>"; };
+		B645512A25F441BB00CF25ED /* CaterImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterImageHelper.swift; sourceTree = "<group>"; };
+		B65B692325CDE46E002725F4 /* ServicesModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesModal.swift; sourceTree = "<group>"; };
+		B65B692625CDE95A002725F4 /* CaterServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterServicesView.swift; sourceTree = "<group>"; };
+		B65B692925CDEBD5002725F4 /* CaterServiceStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaterServiceStack.swift; sourceTree = "<group>"; };
+		C395B95566C7BA7CA5027CD0 /* Pods-JustThatGoodCatering.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustThatGoodCatering.debug.xcconfig"; path = "Target Support Files/Pods-JustThatGoodCatering/Pods-JustThatGoodCatering.debug.xcconfig"; sourceTree = "<group>"; };
+		C9A9B3D97A8809F717A0A688 /* Pods-JustThatGoodCatering.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustThatGoodCatering.release.xcconfig"; path = "Target Support Files/Pods-JustThatGoodCatering/Pods-JustThatGoodCatering.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B60CED9525AE395700CDC5DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43DBFC7E1B1044A3DBCA4997 /* Pods_JustThatGoodCatering.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E9EB00CB7E69299E90D66A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C395B95566C7BA7CA5027CD0 /* Pods-JustThatGoodCatering.debug.xcconfig */,
+				C9A9B3D97A8809F717A0A688 /* Pods-JustThatGoodCatering.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFD7AA982C8CC0C74E48E6FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65BF7715FFC4273682BFCC71 /* Pods_JustThatGoodCatering.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B60CED8F25AE395700CDC5DC = {
+			isa = PBXGroup;
+			children = (
+				B60CED9A25AE395700CDC5DC /* JustThatGoodCatering */,
+				B60CED9925AE395700CDC5DC /* Products */,
+				3E9EB00CB7E69299E90D66A7 /* Pods */,
+				AFD7AA982C8CC0C74E48E6FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B60CED9925AE395700CDC5DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B60CED9825AE395700CDC5DC /* JustThatGoodCatering.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B60CED9A25AE395700CDC5DC /* JustThatGoodCatering */ = {
+			isa = PBXGroup;
+			children = (
+				B6275A9425F48C1800B69A67 /* GoogleService-Info.plist */,
+				B62048F825B0BC5200171789 /* CaterItems */,
+				B617B29F25AF98DF00314366 /* DetailView */,
+				B63B62BC25AE472900B96B5F /* Model */,
+				B63B62B725AE46EF00B96B5F /* Home */,
+				B63B62B625AE462B00B96B5F /* Helpers */,
+				B60CED9B25AE395700CDC5DC /* JustThatGoodCateringApp.swift */,
+				B60CED9F25AE395900CDC5DC /* Assets.xcassets */,
+				B60CEDA425AE395900CDC5DC /* Info.plist */,
+				B60CEDA125AE395900CDC5DC /* Preview Content */,
+			);
+			path = JustThatGoodCatering;
+			sourceTree = "<group>";
+		};
+		B60CEDA125AE395900CDC5DC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B60CEDA225AE395900CDC5DC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B617B29F25AF98DF00314366 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				B61299AB25D70666007FE109 /* DetailView.swift */,
+				B61582EC25EB2301005BA581 /* AboutView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		B62048F825B0BC5200171789 /* CaterItems */ = {
+			isa = PBXGroup;
+			children = (
+				B62048F925B0BC8C00171789 /* CaterItem.swift */,
+				B62048FC25B0BC9E00171789 /* CaterItemRow.swift */,
+			);
+			path = CaterItems;
+			sourceTree = "<group>";
+		};
+		B63B62B625AE462B00B96B5F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B63B62BD25AE475200B96B5F /* GlobalHelper.swift */,
+				B62048E325B09D0D00171789 /* ImageLoader.swift */,
+				B645512A25F441BB00CF25ED /* CaterImageHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B63B62B725AE46EF00B96B5F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B63B62B825AE470000B96B5F /* HomeView.swift */,
+				B617B29B25AF6D9B00314366 /* HomeTileView.swift */,
+				B62048E025B09C0500171789 /* CaterList.swift */,
+				B6180E4625B1F5FE0029C947 /* HomeTileStack.swift */,
+				B65B692625CDE95A002725F4 /* CaterServicesView.swift */,
+				B65B692925CDEBD5002725F4 /* CaterServiceStack.swift */,
+				B61582E925EB1CC7005BA581 /* MainView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B63B62BC25AE472900B96B5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B63B62C025AE48F100B96B5F /* Cater.swift */,
+				B63B62C325AE4ACD00B96B5F /* CaterVM.swift */,
+				B617B29825AF652100314366 /* HomeTiles.swift */,
+				B65B692325CDE46E002725F4 /* ServicesModal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B60CED9725AE395700CDC5DC /* JustThatGoodCatering */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B60CEDA725AE395900CDC5DC /* Build configuration list for PBXNativeTarget "JustThatGoodCatering" */;
+			buildPhases = (
+				B037BE2B069D29CC5AE97B3D /* [CP] Check Pods Manifest.lock */,
+				B60CED9425AE395700CDC5DC /* Sources */,
+				B60CED9525AE395700CDC5DC /* Frameworks */,
+				B60CED9625AE395700CDC5DC /* Resources */,
+				BF5956BCB70CBEC60683368A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JustThatGoodCatering;
+			productName = JustThatGoodCatering;
+			productReference = B60CED9825AE395700CDC5DC /* JustThatGoodCatering.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B60CED9025AE395700CDC5DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B60CED9725AE395700CDC5DC = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = B60CED9325AE395700CDC5DC /* Build configuration list for PBXProject "JustThatGoodCatering" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B60CED8F25AE395700CDC5DC;
+			productRefGroup = B60CED9925AE395700CDC5DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B60CED9725AE395700CDC5DC /* JustThatGoodCatering */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B60CED9625AE395700CDC5DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60CEDA325AE395900CDC5DC /* Preview Assets.xcassets in Resources */,
+				B60CEDA025AE395900CDC5DC /* Assets.xcassets in Resources */,
+				B6275A9525F48C1800B69A67 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B037BE2B069D29CC5AE97B3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JustThatGoodCatering-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF5956BCB70CBEC60683368A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustThatGoodCatering/Pods-JustThatGoodCatering-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JustThatGoodCatering/Pods-JustThatGoodCatering-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JustThatGoodCatering/Pods-JustThatGoodCatering-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B60CED9425AE395700CDC5DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B617B29925AF652100314366 /* HomeTiles.swift in Sources */,
+				B65B692725CDE95A002725F4 /* CaterServicesView.swift in Sources */,
+				B63B62BE25AE475200B96B5F /* GlobalHelper.swift in Sources */,
+				B6180E4725B1F5FE0029C947 /* HomeTileStack.swift in Sources */,
+				B61582ED25EB2301005BA581 /* AboutView.swift in Sources */,
+				B65B692425CDE46E002725F4 /* ServicesModal.swift in Sources */,
+				B62048E425B09D0D00171789 /* ImageLoader.swift in Sources */,
+				B617B29C25AF6D9B00314366 /* HomeTileView.swift in Sources */,
+				B62048FA25B0BC8C00171789 /* CaterItem.swift in Sources */,
+				B65B692A25CDEBD5002725F4 /* CaterServiceStack.swift in Sources */,
+				B61299AC25D70666007FE109 /* DetailView.swift in Sources */,
+				B62048E125B09C0500171789 /* CaterList.swift in Sources */,
+				B61582EA25EB1CC7005BA581 /* MainView.swift in Sources */,
+				B645512B25F441BB00CF25ED /* CaterImageHelper.swift in Sources */,
+				B62048FD25B0BC9E00171789 /* CaterItemRow.swift in Sources */,
+				B63B62C125AE48F100B96B5F /* Cater.swift in Sources */,
+				B63B62B925AE470000B96B5F /* HomeView.swift in Sources */,
+				B63B62C425AE4ACD00B96B5F /* CaterVM.swift in Sources */,
+				B60CED9C25AE395700CDC5DC /* JustThatGoodCateringApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B60CEDA525AE395900CDC5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B60CEDA625AE395900CDC5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B60CEDA825AE395900CDC5DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C395B95566C7BA7CA5027CD0 /* Pods-JustThatGoodCatering.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"JustThatGoodCatering/Preview Content\"";
+				DEVELOPMENT_TEAM = C6NFGL9653;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JustThatGoodCatering/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aanthony.JTGCatering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = JustThatGoodCatering;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B60CEDA925AE395900CDC5DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9A9B3D97A8809F717A0A688 /* Pods-JustThatGoodCatering.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"JustThatGoodCatering/Preview Content\"";
+				DEVELOPMENT_TEAM = C6NFGL9653;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = JustThatGoodCatering/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aanthony.JTGCatering;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = JustThatGoodCatering;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B60CED9325AE395700CDC5DC /* Build configuration list for PBXProject "JustThatGoodCatering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60CEDA525AE395900CDC5DC /* Debug */,
+				B60CEDA625AE395900CDC5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B60CEDA725AE395900CDC5DC /* Build configuration list for PBXNativeTarget "JustThatGoodCatering" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B60CEDA825AE395900CDC5DC /* Debug */,
+				B60CEDA925AE395900CDC5DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B60CED9025AE395700CDC5DC /* Project object */;
+}
