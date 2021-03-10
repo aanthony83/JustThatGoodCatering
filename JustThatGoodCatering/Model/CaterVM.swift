@@ -17,7 +17,6 @@ class CaterViewModel: ObservableObject, Identifiable{
     
     private var db = Firestore.firestore()
     
-    //String == Category
     @Published var food : [String: [Cater]] = [:]
     
     public var allCategories: [String] {

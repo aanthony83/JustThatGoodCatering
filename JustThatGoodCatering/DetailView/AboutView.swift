@@ -35,7 +35,7 @@ struct AboutView: View {
                     Image("cater1")
                         .resizable()
                         .scaledToFill()
-                    //                        .frame(width:screen.width)
+                        .frame(width:screen.width)
                     
                     Text("My Story")  
                         .font(.headline)
@@ -54,12 +54,13 @@ struct AboutView: View {
                         
                         // Clickable telphone number
                         
-                        Button(action: {}, label: {
-                            VStack(alignment:.leading) {
-                                
-                                Text("Call")
-                                    .bold()
-                                    .font(.headline)
+                        Text("Call")
+                            .bold()
+                            .font(.headline)
+                        Spacer()
+                        
+                        Button(action: {
+                        }, label: {
                                 HStack {
                                     Link("(301)775-9169", destination: URL(string: "tel:3017759169")!)
                                         .font(.subheadline)
@@ -68,11 +69,9 @@ struct AboutView: View {
                                     Image(systemName: "phone.connection")
                                         .font(.system(size: 20))
                                 }
-                            }
-                            
-                            
                         })
                         
+                        Spacer()
                         Spacer()
                         
                         VStack(alignment: .leading){
@@ -110,7 +109,9 @@ struct AboutView: View {
                     
                     HStack {
                         Text("Version:")
+                            .font(.footnote)
                         Text("\(appVersion)\(".")\(build)")
+                            .font(.footnote)
                     }.padding()
                     
                     

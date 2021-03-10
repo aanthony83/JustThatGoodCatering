@@ -39,7 +39,6 @@ struct HomeView: View {
                     Text("Menu")
                         .font(.title2)
                     
-                    
                     ForEach(catagories.keys.sorted(), id: \String.self) { item in
                         CaterItemRow(catagoryName: item, food: self.catagories[item]!, foodDetailToShow: $foodDetailToShow)
                             .frame(height: 150)

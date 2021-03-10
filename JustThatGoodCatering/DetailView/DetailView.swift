@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct DetailView: View {
     
@@ -40,7 +41,15 @@ struct DetailView: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     //Async Images Version2
-                    AsyncImage2(url: url!, placeholder: Text(""))
+//                    AsyncImage2(url: url!, placeholder: Text(""))
+                    KFImage(url!)
+                        .resizable()
+                        // .renderingMode(.original)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: 300, height: 250)
+                        .clipped()
+                        .cornerRadius(10)
+                        .shadow(radius: 10)
                         .padding()
                     VStack {
                         Text(caterData.name)

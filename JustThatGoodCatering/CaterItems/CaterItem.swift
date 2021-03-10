@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CaterItem: View {
     
@@ -17,8 +18,15 @@ struct CaterItem: View {
             
             let url = URL(string: caterItem.image)
             //Async image  
-            AsyncImage(url: url!, placeholder: Text(""))
-//                .frame(width: 150, height: 100)
+//            AsyncImage(url: url!, placeholder: Text(""))
+            KFImage(url!)
+                .resizable()
+                // .renderingMode(.original)
+                .aspectRatio(contentMode: .fill)
+                .frame(width: 200, height: 100)
+                .clipped()
+                .cornerRadius(10)
+                .shadow(radius: 10)
         }
     }
 }

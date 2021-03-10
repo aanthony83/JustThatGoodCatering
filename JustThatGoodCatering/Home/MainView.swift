@@ -16,7 +16,7 @@ struct MainView: View {
             TabView {
                 HomeView()
                     .tabItem {
-                        Label("", systemImage: "homekit")
+                        Label("", systemImage: "house")
                     }
                 
                 AboutView()
