@@ -14,6 +14,8 @@
 		B61299AC25D70666007FE109 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61299AB25D70666007FE109 /* DetailView.swift */; };
 		B61582EA25EB1CC7005BA581 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61582E925EB1CC7005BA581 /* MainView.swift */; };
 		B61582ED25EB2301005BA581 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61582EC25EB2301005BA581 /* AboutView.swift */; };
+		B616948E25FBD03D009FE461 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616948D25FBD03D009FE461 /* LoginView.swift */; };
+		B616949125FBFA37009FE461 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B616949025FBFA37009FE461 /* SessionStore.swift */; };
 		B617B29925AF652100314366 /* HomeTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617B29825AF652100314366 /* HomeTiles.swift */; };
 		B617B29C25AF6D9B00314366 /* HomeTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B617B29B25AF6D9B00314366 /* HomeTileView.swift */; };
 		B6180E4725B1F5FE0029C947 /* HomeTileStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6180E4625B1F5FE0029C947 /* HomeTileStack.swift */; };
@@ -43,6 +45,8 @@
 		B61299AB25D70666007FE109 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		B61582E925EB1CC7005BA581 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B61582EC25EB2301005BA581 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		B616948D25FBD03D009FE461 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B616949025FBFA37009FE461 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		B617B29825AF652100314366 /* HomeTiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTiles.swift; sourceTree = "<group>"; };
 		B617B29B25AF6D9B00314366 /* HomeTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileView.swift; sourceTree = "<group>"; };
 		B6180E4625B1F5FE0029C947 /* HomeTileStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTileStack.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 		B60CED9A25AE395700CDC5DC /* JustThatGoodCatering */ = {
 			isa = PBXGroup;
 			children = (
+				B616948C25FBD02C009FE461 /* Login */,
 				B6275A9425F48C1800B69A67 /* GoogleService-Info.plist */,
 				B62048F825B0BC5200171789 /* CaterItems */,
 				B617B29F25AF98DF00314366 /* DetailView */,
@@ -134,6 +139,15 @@
 				B60CEDA225AE395900CDC5DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B616948C25FBD02C009FE461 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B616948D25FBD03D009FE461 /* LoginView.swift */,
+				B616949025FBFA37009FE461 /* SessionStore.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		B617B29F25AF98DF00314366 /* DetailView */ = {
@@ -317,6 +331,7 @@
 				B65B692425CDE46E002725F4 /* ServicesModal.swift in Sources */,
 				B62048E425B09D0D00171789 /* ImageLoader.swift in Sources */,
 				B617B29C25AF6D9B00314366 /* HomeTileView.swift in Sources */,
+				B616949125FBFA37009FE461 /* SessionStore.swift in Sources */,
 				B62048FA25B0BC8C00171789 /* CaterItem.swift in Sources */,
 				B65B692A25CDEBD5002725F4 /* CaterServiceStack.swift in Sources */,
 				B61299AC25D70666007FE109 /* DetailView.swift in Sources */,
@@ -327,6 +342,7 @@
 				B63B62C125AE48F100B96B5F /* Cater.swift in Sources */,
 				B63B62B925AE470000B96B5F /* HomeView.swift in Sources */,
 				B63B62C425AE4ACD00B96B5F /* CaterVM.swift in Sources */,
+				B616948E25FBD03D009FE461 /* LoginView.swift in Sources */,
 				B60CED9C25AE395700CDC5DC /* JustThatGoodCateringApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,7 +474,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"JustThatGoodCatering/Preview Content\"";
 				DEVELOPMENT_TEAM = C6NFGL9653;
 				ENABLE_PREVIEWS = YES;
@@ -484,7 +500,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"JustThatGoodCatering/Preview Content\"";
 				DEVELOPMENT_TEAM = C6NFGL9653;
 				ENABLE_PREVIEWS = YES;

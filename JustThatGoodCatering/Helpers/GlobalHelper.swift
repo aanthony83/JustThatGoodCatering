@@ -61,5 +61,5 @@ extension LinearGradient {
     static let blackOpacity = LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.95)]), startPoint: .top, endPoint: .bottom)
     static let blackOpacityV2 = LinearGradient(gradient: Gradient(colors: [Color.gray.opacity(0.0), Color.black.opacity(0.95)]), startPoint: .top, endPoint: .bottom)
     static let orangeOpacityV2 = LinearGradient(gradient: Gradient(colors: [Color.orange.opacity(0.75), Color.orange.opacity(0.95)]), startPoint: .top, endPoint: .bottom)
-    static let blueOpacity = LinearGradient(gradient: Gradient(colors: [Color.blue.opacity(0.75), Color.blue.opacity(0.95)]), startPoint: .top , endPoint: .bottom)
+    static let blueOpacity = LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.75), Color.green.opacity(0.95)]), startPoint: .top , endPoint: .bottom)
 }

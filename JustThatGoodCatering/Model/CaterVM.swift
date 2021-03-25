@@ -17,6 +17,7 @@ class CaterViewModel: ObservableObject, Identifiable{
     
     private var db = Firestore.firestore()
     
+    
     @Published var food : [String: [Cater]] = [:]
     
     public var allCategories: [String] {
@@ -24,7 +25,6 @@ class CaterViewModel: ObservableObject, Identifiable{
     }
     
     func fetchData() {
-        
         
         db.collection("cater").addSnapshotListener { [self] (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {

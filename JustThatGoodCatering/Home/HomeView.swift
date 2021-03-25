@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct HomeView: View {
     
@@ -20,9 +21,13 @@ struct HomeView: View {
         Dictionary(grouping: viewModel.caterItems ){$0.category.rawValue}
     }
     
-    
+    /*Dismiss a view thats presented */
+//    @Environment(\.presentationMode) var presentationMode
+//    presentationMode.wrappedValue.dismiss()
+
     
     var body: some View {
+        
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)

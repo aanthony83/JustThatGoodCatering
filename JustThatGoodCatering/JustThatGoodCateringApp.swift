@@ -10,13 +10,17 @@ import Firebase
 
 @main
 struct JustThatGoodCateringApp: App {
+    
     // initialize Firebase 
     init(){
         FirebaseApp.configure()
-    } 
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+//            MainView()
+            LoginView()
         }
     }
 }
