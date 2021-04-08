@@ -15,35 +15,66 @@ struct HomeView: View {
     @StateObject var viewModel = CaterViewModel()
     
     @State private var foodDetailToShow: Cater? = nil
+    @State private var showLoginView = false
+    
+    let user = Auth.auth().currentUser?.email
     
     // Group by Category 
     var catagories: [String: [Cater]] {
         Dictionary(grouping: viewModel.caterItems ){$0.category.rawValue}
     }
     
-    /*Dismiss a view thats presented */
-//    @Environment(\.presentationMode) var presentationMode
-//    presentationMode.wrappedValue.dismiss()
-
-    
     var body: some View {
-        
+        NavigationView {
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
+            
             ScrollView(showsIndicators: false) {
+                
                 VStack {
+                    /* Display a Welcome Section at the top */
+//                    HStack {
+//                        VStack(alignment: .leading, spacing: 5) {
+//                            Text("Welcome")
+//                                . font(.title)
+//                                .bold()
+//                                .foregroundColor(.white)
+//
+//                            Text("Lets book your event!")
+//                        }
+//
+//                        Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+//
+//                        Button(action: {} )  {
+//                            Image("atl")
+//                                .resizable()
+//                                .renderingMode(.original)
+//                                .frame(width: 50 , height: 50)
+//                                .clipShape(Circle())
+//                        }
+//                    }.padding()
                     
+                    Spacer()
                     TopImage()
                         .frame(width: screen.width)
                     
-                    // List of Services
-                    //                    CaterServiceStack(service: allServices)
-                    //                        .padding(.bottom , 8)
+                    VStack {
+                        Text("Menu")
+                            .font(.title2)
                     
-                    Text("Menu")
-                        .font(.title2)
+                    Text("Welcome \(user ?? "")")
+                    }.animation(.spring())
                     
+                    Button(action: {
+                        showLoginView.toggle()
+                    }, label: {
+                        Text("Log Out")
+                    })
+                    .fullScreenCover(isPresented: $showLoginView) {
+                        LoginView()
+                    }
+                
                     ForEach(catagories.keys.sorted(), id: \String.self) { item in
                         CaterItemRow(catagoryName: item, food: self.catagories[item]!, foodDetailToShow: $foodDetailToShow)
                             .frame(height: 150)
@@ -65,9 +96,11 @@ struct HomeView: View {
             }
         }.onAppear() {
             self.viewModel.fetchData()
+
         }
         
     }
+}
 }
 
 struct HomeView_Previews: PreviewProvider {
@@ -106,4 +139,7 @@ struct TopImage: View {
     }
     
 }
+
+
+
 

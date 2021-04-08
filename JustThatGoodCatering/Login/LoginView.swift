@@ -22,6 +22,7 @@ struct LoginView: View {
             if UIScreen.main.bounds.height > 800{
                 
                 Home()
+                
             }
             else{
                 
@@ -39,7 +40,9 @@ struct LoginView: View {
                 
             }
             
-        }    }
+        }
+        
+    }
 }
 
 
@@ -210,7 +213,7 @@ struct Login : View {
                     .frame(width: UIScreen.main.bounds.width - 100)
                 
             } .fullScreenCover(isPresented: $showingHomeView) {
-                HomeView()
+                MainView()
             }
             .background(
                 
@@ -228,17 +231,17 @@ struct Login : View {
             Button(action: {
                 
                 self.showResetPasswordView.toggle()
-//                                    resetPassword(email: user) { (error) in
-//                                        if user.isEmpty {
-//                                            print("input email")
-//                                            self.msg = error
-//                                            self.alert.toggle()
-//
-//                                        }
-//                                        else {
-//                                            self.showResetPasswordView.toggle()
-//                                        }
-//                                    }
+                //                                    resetPassword(email: user) { (error) in
+                //                                        if user.isEmpty {
+                //                                            print("input email")
+                //                                            self.msg = error
+                //                                            self.alert.toggle()
+                //
+                //                                        }
+                //                                        else {
+                //                                            self.showResetPasswordView.toggle()
+                //                                        }
+                //                                    }
             }) {
                 
                 Text("Forget Password?")
@@ -248,13 +251,13 @@ struct Login : View {
             .fullScreenCover(isPresented: $showResetPasswordView) {
                 resetPasswordView()
             }
-//            .alert(isPresented: $alert) {
-//                Alert(title: Text("Error"), message: Text(self.msg), dismissButton: .default(Text("OK")))
-//
-//            }
+            //            .alert(isPresented: $alert) {
+            //                Alert(title: Text("Error"), message: Text(self.msg), dismissButton: .default(Text("OK")))
+            //
+            //            }
             .padding(.top, 20)
             
-        }
+        }.foregroundColor(.black)
     }
 }
 
@@ -416,15 +419,32 @@ struct resetPasswordView : View {
     @State var msg = ""
     
     @Environment(\.presentationMode) var presentationMode
-
+    
+    
     
     var body : some View {
         
         ZStack {
-            
+
             Color.clear.background(LinearGradient.blueOpacity).edgesIgnoringSafeArea(.all)
-            
+
             VStack {
+                
+                HStack{
+                    Spacer()
+                    
+                    Button(action: {
+                        
+                        presentationMode.wrappedValue.dismiss()
+
+                    }, label: {
+                        Image(systemName: "xmark.circle")
+                            .font(.system(size: 28))
+                            .foregroundColor(.blue)
+                    })
+                }.padding(5)
+                
+                
                 VStack {
                     HStack(spacing: 15){
                         
@@ -445,10 +465,7 @@ struct resetPasswordView : View {
                 .background(Color.white)
                 .cornerRadius(10)
                 .padding(.top, 25)
-                //                .padding(.trailing ,10)
-                //                .padding(.leading, 10)
-                
-                
+
                 Button(action: {
                     
                     Auth.auth().sendPasswordReset(withEmail: user) { (error) in
@@ -458,7 +475,7 @@ struct resetPasswordView : View {
                         }
                         else {
                             DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                             presentationMode.wrappedValue.dismiss()
+                                presentationMode.wrappedValue.dismiss()
                             }
                         }
                     }
@@ -473,7 +490,7 @@ struct resetPasswordView : View {
                         .frame(width: UIScreen.main.bounds.width - 100)
                     
                 }
-
+                
                 .alert(isPresented: $showalert) {
                     Alert(title: Text("Error"), message: Text(self.msg), dismissButton: .default(Text("OK")))
                     
@@ -523,6 +540,7 @@ func signup(email: String , password: String, completion: @escaping (Bool, Strin
     }
     
 }
+
 
 func resetPassword(email: String, completion: @escaping (String) -> Void) {
     
