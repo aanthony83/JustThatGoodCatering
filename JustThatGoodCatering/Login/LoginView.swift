@@ -151,7 +151,7 @@ struct Login : View {
                     Image(systemName: "envelope")
                         .foregroundColor(.black)
                     
-                    TextField("Enter Email Address", text: self.$user)
+                    TextField("Enter Email Address", text: self.$user).foregroundColor(.gray)
                     
                 }.padding(.vertical, 20)
                 
@@ -407,7 +407,7 @@ struct SignUp : View {
             user = ""
             pass = ""
             repass = ""
-        }
+        }.foregroundColor(.black)
     }
 }
 
@@ -504,7 +504,7 @@ struct resetPasswordView : View {
                 .offset(y: -40)
                 .padding(.bottom, -40)
                 .shadow(radius: 15)
-            }
+            }.foregroundColor(.black)
         }
     }
 }

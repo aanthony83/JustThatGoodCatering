@@ -23,6 +23,10 @@ struct MainView: View {
                     .tabItem {
                         Label("", systemImage: "person.crop.circle")
                     }
+                HomeView()
+                    .tabItem {
+                        Label("", systemImage: "gearshape")
+                    }
             }
         }
     }

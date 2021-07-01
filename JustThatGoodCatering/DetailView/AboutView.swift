@@ -20,18 +20,17 @@ struct AboutView: View {
     
     var body: some View {
         
-        
+
         ZStack {
+            
             Color.black
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
                 
-                
-                
+              
                 ScrollView(.vertical, showsIndicators: false) {
-                    
-                    
+
                     Image("cater1")
                         .resizable()
                         .scaledToFill()
@@ -84,11 +83,12 @@ struct AboutView: View {
                             
                             Spacer()
                             
-                            Text("Breakfast & Brunch Catering,Event Catering, Lunch Catering, Party Catering, Dinner Catering, Holiday Catering,Virtual Consultations")
-                                .font(.caption)
-                                .foregroundColor(.gray)
-                            
+                              
                         }
+                        
+                        Text("Breakfast & Brunch Catering,Event Catering, Lunch Catering, Party Catering, Dinner Catering, Holiday Catering,Virtual Consultations")
+                            .font(.caption)
+                            .foregroundColor(.gray)   
                         
                         
                     }.padding()
@@ -120,7 +120,7 @@ struct AboutView: View {
             
             
             
-        }.foregroundColor(.white)
+        }.foregroundColor(.white).padding(.top, -100)
     }
 }
 

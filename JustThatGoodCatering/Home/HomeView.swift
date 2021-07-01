@@ -25,7 +25,7 @@ struct HomeView: View {
     }
     
     var body: some View {
-        NavigationView {
+        
         ZStack {
             Color.black
                 .edgesIgnoringSafeArea(.all)
@@ -62,18 +62,18 @@ struct HomeView: View {
                     VStack {
                         Text("Menu")
                             .font(.title2)
-                    
-                    Text("Welcome \(user ?? "")")
                     }.animation(.spring())
                     
-                    Button(action: {
-                        showLoginView.toggle()
-                    }, label: {
-                        Text("Log Out")
-                    })
-                    .fullScreenCover(isPresented: $showLoginView) {
-                        LoginView()
-                    }
+                    /* Log out functionality */
+                    
+//                    Button(action: {
+//                        showLoginView.toggle()
+//                    }, label: {
+//                        Text("Log Out")
+//                    })
+//                    .fullScreenCover(isPresented: $showLoginView) {
+//                        LoginView()
+//                    }
                 
                     ForEach(catagories.keys.sorted(), id: \String.self) { item in
                         CaterItemRow(catagoryName: item, food: self.catagories[item]!, foodDetailToShow: $foodDetailToShow)
@@ -101,7 +101,7 @@ struct HomeView: View {
         
     }
 }
-}
+
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
